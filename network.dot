@@ -1,0 +1,71 @@
+# http://www.graphviz.org/content/cluster
+# http://www.graphviz.org/content/cluster
+
+digraph G {
+  edge [style="bold"];
+ graph [center=1 rankdir=LR]
+
+  xxxY -> xxxx [color="yellow" label="0b10000101"];
+  xxxY -> xxxx [color="yellow" label="0b11000011"];
+  xxxY -> xxxx [color="yellow" label="0b01001110"];
+  xxxY -> RxxY [label="0b11001101"];  
+  xxGx -> xxxx [color="green" label="0b01000011"];
+  xxGx -> xxxx [color="green" label="0b11000001"];
+  xxGx -> xxxx [color="green" label="0b11000111"];
+  xxGx -> xBGx [label="0b11001000"];
+  xxGY -> xxxY [color="green" label="0b10111001"];
+  xxGY -> xxxY [color="green" label="0b10000111"];
+  xxGY -> xxGx [color="yellow" label="0b10000110"];
+  xxGY -> xxGx [color="yellow" label="0b00000101"];
+  xBxx -> xxxx [color="blue" label="0b11000010"];
+  xBxx -> xxxx [color="blue" label="0b11011101"];
+  xBxx -> xxxx [color="blue" label="0b11010010"];
+  xBxx -> xBxY [label="0b11001110"];
+  xBxY -> xBxx [color="yellow" label="0b00111011"];
+  xBxY -> xBxx [color="yellow" label="0b10101001"];
+  xBxY -> xxxY [color="blue" label="0b00111111"];
+  xBxY -> xxxY [color="blue" label="0b10000010"];
+  xBGx -> xxGx [color="blue" label="0b10000010"];
+  xBGx -> xxGx [color="blue" label="0b01010101"];
+  xBGx -> xBxx [color="green" label="0b11000111"];
+  xBGx -> xBxx [color="green" label="0b10000110"];
+  xBGY -> xBGx [color="yellow" label="0b10001010"];
+  xBGY -> xBGx [color="yellow" label="0b10000110"];
+  xBGY -> xBxY [color="green" label="0b11010011"];
+  xBGY -> xxGY [color="blue" label="0b10111111"];
+  Rxxx -> xxxx [color="red" label="0b10000100"];
+  Rxxx -> xxxx [color="red" label="0b11010110"];
+  Rxxx -> xxxx [color="red" label="0b01001101"];
+  Rxxx -> RxxY [label="0b01000001"];
+  RxxY -> Rxxx [color="yellow" label="0b11000011"];
+  RxxY -> Rxxx [color="yellow" label="0b10000110"];
+  RxxY -> xxxY [color="red" label="0b01000000"];
+  RxxY -> xxxY [color="red" label="0b11010001"];
+  RxGx -> xxGx [color="red" label="0b00000011"];
+  RxGx -> xxGx [color="red" label="0b00000100"];
+  RxGx -> Rxxx [color="green" label="0b01000011"];
+  RxGx -> Rxxx [color="green" label="0b11000111"];
+  RxGY -> RxGx [color="yellow" label="0b10000100"];
+  RxGY -> RxGx [color="yellow" label="0b10000011"];
+  RxGY -> RxxY [color="green" label="0b00000110"];
+  RxGY -> xxGY [color="red" label="0b00100010"];
+  RBxx -> Rxxx [color="blue" label="0b00111111"];
+  RBxx -> Rxxx [color="blue" label="0b10000010"];
+  RBxx -> xBxx [color="red" label="0b00100001"];
+  RBxx -> xBxx [color="red" label="0b10010100"];
+  RBxY -> RBxx [color="yellow" label="0b00111010"];
+  RBxY -> RBxx [color="yellow" label="0b10000101"];
+  RBxY -> RxxY [color="blue" label="0b10111111"];
+  RBxY -> xBxY [color="red" label="0b10000100"];
+  RBGx -> RBxx [color="green" label="0b10000111"];
+  RBGx -> RBxx [color="green" label="0b10011000"];
+  RBGx -> RxGx [color="blue" label="0b10110000"];
+  RBGx -> xBGx [color="red" label="0b10011010"];
+  RBGY -> RBGx [color="yellow" label="0b10100010"];
+  RBGY -> RBxY [color="green" label="0b10000111"];
+  RBGY -> RxGY [color="blue" label="0b10000001"];
+  RBGY -> xBGY [color="red" label="0b10111100"]; 
+  RBGY [shape=Mdiamond];
+  xxxx [shape=Msquare];
+}
+
