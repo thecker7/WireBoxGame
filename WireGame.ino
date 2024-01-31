@@ -98,6 +98,12 @@ char wordlist[][4] = { "xnox", //0
                     "feel" };
     //Condition: Beeping, Words, RBLINK, YBLINK, GBLINK, RLED, YLED, GLED
     //State: RBGY
+    //Given a state of the wires 0=cut, 1=connected. E.g. 0b1010 = red connected, blue cut, green connected, ylw cut
+    //There will be 4 possible conditions, picked at random with a corresponding "correct state"
+    //Given the condition you will need to cut or connect the right wire to get to the correct state
+    //e.g. the line for 0b1110 (RBG connected, ylw, cut) { 0b1100,  0b10000111,  0b1100, 0b10011000,  0b1010,  0b10110000,  0b0110,  0b10011010}
+    //The first pair (0b1100,  0b10000111) shows if the condition is 0b10000111 (beeping, R,Y,G leds all on), then you would need to cut the
+    //green wire to get to state 0b1100
 const uint8_t MODEMATRIX[16][8] = { { 0, 0, 0, 0,0,0,0,0}, //0b0000, all cut, endgame mode
                                     { 0b0000,  0b10000101,  0b0000, 0b11000011,  0b0000,  0b01001110,  0b1001,  0b11001101},   //0b0001
                                     { 0b0000,  0b01000011,  0b0000, 0b11000001,  0b0000,  0b11000111,  0b0110,  0b11001000},   //0b0010
